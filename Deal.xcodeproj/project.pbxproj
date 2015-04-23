@@ -527,7 +527,7 @@
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_iOS_v2/Deal/Deal/SwiftHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_version2/Deal/Deal/SwiftHeader.h;
 			};
 			name = Debug;
 		};
@@ -542,7 +542,7 @@
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_iOS_v2/Deal/Deal/SwiftHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_version2/Deal/Deal/SwiftHeader.h;
 			};
 			name = Release;
 		};
