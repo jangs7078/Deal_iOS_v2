@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var my_icon: UIImageView!
     
+    @IBOutlet weak var my_icon: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,8 +19,8 @@ class ViewController: UIViewController {
         // Round my_icon
         my_icon.layer.cornerRadius = my_icon.frame.size.height / 2;
         my_icon.clipsToBounds = true
-        my_icon.layer.borderWidth = 0.5
-        my_icon.layer.borderColor = UIColor.blackColor().CGColor
+        my_icon.layer.borderWidth = 1.0
+        my_icon.layer.borderColor = UIColor.whiteColor().CGColor
         
         // Add motion effect on my_icon
         my_icon.addMotionEffect(getMotionEffectGroup())
@@ -31,19 +31,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func getMotionEffectGroup () ->UIMotionEffect {
+    func getMotionEffectGroup () ->UIMotionEffectGroup {
         print ("ddddddd\n")
         // Set vertical effect
         let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y",
             type: .TiltAlongVerticalAxis)
-        verticalMotionEffect.minimumRelativeValue = -10
-        verticalMotionEffect.maximumRelativeValue = 10
+        verticalMotionEffect.minimumRelativeValue = -200
+        verticalMotionEffect.maximumRelativeValue = 200
         
         // Set horizontal effect
         let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x",
             type: .TiltAlongHorizontalAxis)
-        horizontalMotionEffect.minimumRelativeValue = -10
-        horizontalMotionEffect.maximumRelativeValue = 10
+        horizontalMotionEffect.minimumRelativeValue = -200
+        horizontalMotionEffect.maximumRelativeValue = 200
         
         // Create group to combine both
         let group = UIMotionEffectGroup()
