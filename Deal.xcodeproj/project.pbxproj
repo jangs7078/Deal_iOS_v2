@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9504830C1AE9FF0A003AA85E /* Jenny_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483081AE9FF0A003AA85E /* Jenny_Profile.png */; };
+		9504830D1AE9FF0A003AA85E /* Jack_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483091AE9FF0A003AA85E /* Jack_Profile.png */; };
+		9504830E1AE9FF0A003AA85E /* Peter_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9504830A1AE9FF0A003AA85E /* Peter_Profile.png */; };
+		9504830F1AE9FF0A003AA85E /* Aime_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9504830B1AE9FF0A003AA85E /* Aime_Profile.png */; };
+		950483121AE9FF21003AA85E /* Background_Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483101AE9FF21003AA85E /* Background_Blur.png */; };
+		950483131AE9FF21003AA85E /* Deals_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483111AE9FF21003AA85E /* Deals_Text_Logo.png */; };
+		950483151AEA0200003AA85E /* icon-profile-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483141AEA0200003AA85E /* icon-profile-default.png */; };
 		958A2F771AE8F40400DE2479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F761AE8F40400DE2479 /* AppDelegate.swift */; };
 		958A2F7A1AE8F40400DE2479 /* Deal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F781AE8F40400DE2479 /* Deal.xcdatamodeld */; };
 		958A2F7C1AE8F40400DE2479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F7B1AE8F40400DE2479 /* ViewController.swift */; };
@@ -70,6 +77,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		950483081AE9FF0A003AA85E /* Jenny_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jenny_Profile.png; sourceTree = "<group>"; };
+		950483091AE9FF0A003AA85E /* Jack_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jack_Profile.png; sourceTree = "<group>"; };
+		9504830A1AE9FF0A003AA85E /* Peter_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peter_Profile.png; sourceTree = "<group>"; };
+		9504830B1AE9FF0A003AA85E /* Aime_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aime_Profile.png; sourceTree = "<group>"; };
+		950483101AE9FF21003AA85E /* Background_Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_Blur.png; sourceTree = "<group>"; };
+		950483111AE9FF21003AA85E /* Deals_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deals_Text_Logo.png; sourceTree = "<group>"; };
+		950483141AEA0200003AA85E /* icon-profile-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-profile-default.png"; sourceTree = "<group>"; };
 		958A2F711AE8F40400DE2479 /* Deal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958A2F751AE8F40400DE2479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		958A2F761AE8F40400DE2479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +264,13 @@
 		958A2F741AE8F40400DE2479 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				950483141AEA0200003AA85E /* icon-profile-default.png */,
+				950483081AE9FF0A003AA85E /* Jenny_Profile.png */,
+				950483091AE9FF0A003AA85E /* Jack_Profile.png */,
+				9504830A1AE9FF0A003AA85E /* Peter_Profile.png */,
+				9504830B1AE9FF0A003AA85E /* Aime_Profile.png */,
+				950483101AE9FF21003AA85E /* Background_Blur.png */,
+				950483111AE9FF21003AA85E /* Deals_Text_Logo.png */,
 				958A2F751AE8F40400DE2479 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -352,11 +373,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950483121AE9FF21003AA85E /* Background_Blur.png in Resources */,
 				958A2FEE1AE8F57100DE2479 /* sts-2011-06-15.json in Resources */,
+				950483151AEA0200003AA85E /* icon-profile-default.png in Resources */,
 				958A2FE01AE8F57100DE2479 /* cognito-sync-2014-06-30.json in Resources */,
+				9504830D1AE9FF0A003AA85E /* Jack_Profile.png in Resources */,
 				958A2FE61AE8F57100DE2479 /* lambda-2015-03-31.json in Resources */,
 				958A2FE31AE8F57100DE2479 /* elasticloadbalancing-2012-06-01.json in Resources */,
+				9504830C1AE9FF0A003AA85E /* Jenny_Profile.png in Resources */,
 				958A2FEA1AE8F57100DE2479 /* s3-2006-03-01.json in Resources */,
+				9504830F1AE9FF0A003AA85E /* Aime_Profile.png in Resources */,
+				950483131AE9FF21003AA85E /* Deals_Text_Logo.png in Resources */,
 				958A2F7F1AE8F40400DE2479 /* Main.storyboard in Resources */,
 				958A2FE81AE8F57100DE2479 /* mobileanalytics-2014-06-30.json in Resources */,
 				958A2FED1AE8F57100DE2479 /* sqs-2012-11-05.json in Resources */,
@@ -371,6 +398,7 @@
 				958A2FE91AE8F57100DE2479 /* monitoring-2010-08-01.json in Resources */,
 				958A2F811AE8F40400DE2479 /* Images.xcassets in Resources */,
 				958A2FE11AE8F57100DE2479 /* dynamodb-2012-08-10.json in Resources */,
+				9504830E1AE9FF0A003AA85E /* Peter_Profile.png in Resources */,
 				958A2FEB1AE8F57100DE2479 /* sdb-2009-04-15.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
