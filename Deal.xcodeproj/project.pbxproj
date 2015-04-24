@@ -14,6 +14,9 @@
 		950483121AE9FF21003AA85E /* Background_Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483101AE9FF21003AA85E /* Background_Blur.png */; };
 		950483131AE9FF21003AA85E /* Deals_Text_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483111AE9FF21003AA85E /* Deals_Text_Logo.png */; };
 		950483151AEA0200003AA85E /* icon-profile-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483141AEA0200003AA85E /* icon-profile-default.png */; };
+		950483171AEA123A003AA85E /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483161AEA123A003AA85E /* Background.png */; };
+		950483191AEA1240003AA85E /* Gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483181AEA1240003AA85E /* Gear.png */; };
+		9504831B1AEA1245003AA85E /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 9504831A1AEA1245003AA85E /* Search.png */; };
 		958A2F771AE8F40400DE2479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F761AE8F40400DE2479 /* AppDelegate.swift */; };
 		958A2F7A1AE8F40400DE2479 /* Deal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F781AE8F40400DE2479 /* Deal.xcdatamodeld */; };
 		958A2F7C1AE8F40400DE2479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F7B1AE8F40400DE2479 /* ViewController.swift */; };
@@ -84,6 +87,9 @@
 		950483101AE9FF21003AA85E /* Background_Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background_Blur.png; sourceTree = "<group>"; };
 		950483111AE9FF21003AA85E /* Deals_Text_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deals_Text_Logo.png; sourceTree = "<group>"; };
 		950483141AEA0200003AA85E /* icon-profile-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-profile-default.png"; sourceTree = "<group>"; };
+		950483161AEA123A003AA85E /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		950483181AEA1240003AA85E /* Gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gear.png; sourceTree = "<group>"; };
+		9504831A1AEA1245003AA85E /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
 		958A2F711AE8F40400DE2479 /* Deal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958A2F751AE8F40400DE2479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		958A2F761AE8F40400DE2479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +270,9 @@
 		958A2F741AE8F40400DE2479 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9504831A1AEA1245003AA85E /* Search.png */,
+				950483181AEA1240003AA85E /* Gear.png */,
+				950483161AEA123A003AA85E /* Background.png */,
 				950483141AEA0200003AA85E /* icon-profile-default.png */,
 				950483081AE9FF0A003AA85E /* Jenny_Profile.png */,
 				950483091AE9FF0A003AA85E /* Jack_Profile.png */,
@@ -378,6 +387,7 @@
 				950483151AEA0200003AA85E /* icon-profile-default.png in Resources */,
 				958A2FE01AE8F57100DE2479 /* cognito-sync-2014-06-30.json in Resources */,
 				9504830D1AE9FF0A003AA85E /* Jack_Profile.png in Resources */,
+				950483191AEA1240003AA85E /* Gear.png in Resources */,
 				958A2FE61AE8F57100DE2479 /* lambda-2015-03-31.json in Resources */,
 				958A2FE31AE8F57100DE2479 /* elasticloadbalancing-2012-06-01.json in Resources */,
 				9504830C1AE9FF0A003AA85E /* Jenny_Profile.png in Resources */,
@@ -385,11 +395,13 @@
 				9504830F1AE9FF0A003AA85E /* Aime_Profile.png in Resources */,
 				950483131AE9FF21003AA85E /* Deals_Text_Logo.png in Resources */,
 				958A2F7F1AE8F40400DE2479 /* Main.storyboard in Resources */,
+				9504831B1AEA1245003AA85E /* Search.png in Resources */,
 				958A2FE81AE8F57100DE2479 /* mobileanalytics-2014-06-30.json in Resources */,
 				958A2FED1AE8F57100DE2479 /* sqs-2012-11-05.json in Resources */,
 				958A2FE41AE8F57100DE2479 /* email-2010-12-01.json in Resources */,
 				958A2FE51AE8F57100DE2479 /* kinesis-2013-12-02.json in Resources */,
 				958A2FE71AE8F57100DE2479 /* machinelearning-2014-12-12.json in Resources */,
+				950483171AEA123A003AA85E /* Background.png in Resources */,
 				958A2FDF1AE8F57100DE2479 /* cognito-identity-2014-06-30.json in Resources */,
 				958A2F841AE8F40400DE2479 /* LaunchScreen.xib in Resources */,
 				958A2FDE1AE8F57100DE2479 /* autoscaling-2011-01-01.json in Resources */,
