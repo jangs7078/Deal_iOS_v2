@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     }
 
     func getMotionEffectGroup () ->UIMotionEffect {
+        print ("ddddddd\n")
         // Set vertical effect
         let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y",
             type: .TiltAlongVerticalAxis)
@@ -49,6 +50,14 @@ class ViewController: UIViewController {
         group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
         
         return group
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> Int {
+        return UIInterfaceOrientation.Portrait.rawValue
     }
 
 }
