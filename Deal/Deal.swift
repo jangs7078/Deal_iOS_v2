@@ -7,8 +7,8 @@
 //
 
 import Foundation
-/*
-class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
+
+class Deal {
     
     enum FilterType {
         case ME_FILTER_TYPE
@@ -24,10 +24,7 @@ class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     var Type   : FilterType = FilterType.ME_FILTER_TYPE
     var Complete : Bool = false
     
-    override init!() { super.init() }
-    
     init (task : String, reward :String, deal_type: FilterType, dealer_id : String, dealee_id : String) {
-        super.init()
         self.Task = task
         self.Reward = reward
         self.Complete = false
@@ -42,16 +39,6 @@ class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     required init!(coder: NSCoder!) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    class func dynamoDBTableName() -> String! {
-        return "Deal"
-    }
-    class func hashKeyAttribute() -> String! {
-        return "Deal_Id"
-    }
-    /*class func rangeKeyAttribute() -> String! {
-    return ""
-    }*/
     
     func getDealerId() -> String! {
         return self.Dealer_Id
@@ -83,14 +70,4 @@ class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
             return  FilterType.ME_FILTER_TYPE
         }
     }
-    
-    //required to let DynamoDB Mapper create instances of this class
-    override init(dictionary dictionaryValue: [NSObject : AnyObject]!, error: NSErrorPointer) {
-        super.init(dictionary: dictionaryValue, error: error)
-    }
-    
-    //workaround to possible XCode 6.1 Bug : "Type NotificationAck" does not conform to protocol "NSObjectProtocol"
-    override func isEqual(anObject: AnyObject?) -> Bool {
-        return super.isEqual(anObject)
-    }
-}*/
+}
