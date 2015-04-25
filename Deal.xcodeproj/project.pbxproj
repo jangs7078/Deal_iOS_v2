@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BEA8D4C1AEB51DF00AA55D0 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8D4B1AEB51DF00AA55D0 /* SettingViewController.swift */; };
+		1BEA8D4E1AEB520900AA55D0 /* DealDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8D4D1AEB520900AA55D0 /* DealDetailViewController.swift */; };
+		1BEA8D501AEB524F00AA55D0 /* DealView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8D4F1AEB524F00AA55D0 /* DealView.swift */; };
+		1BEA8D521AEB565A00AA55D0 /* DealContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8D511AEB565A00AA55D0 /* DealContainerViewController.swift */; };
 		9504830C1AE9FF0A003AA85E /* Jenny_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483081AE9FF0A003AA85E /* Jenny_Profile.png */; };
 		9504830D1AE9FF0A003AA85E /* Jack_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483091AE9FF0A003AA85E /* Jack_Profile.png */; };
 		9504830E1AE9FF0A003AA85E /* Peter_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9504830A1AE9FF0A003AA85E /* Peter_Profile.png */; };
@@ -57,6 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BEA8D4B1AEB51DF00AA55D0 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		1BEA8D4D1AEB520900AA55D0 /* DealDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealDetailViewController.swift; sourceTree = "<group>"; };
+		1BEA8D4F1AEB524F00AA55D0 /* DealView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealView.swift; sourceTree = "<group>"; };
+		1BEA8D511AEB565A00AA55D0 /* DealContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealContainerViewController.swift; sourceTree = "<group>"; };
 		950483081AE9FF0A003AA85E /* Jenny_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jenny_Profile.png; sourceTree = "<group>"; };
 		950483091AE9FF0A003AA85E /* Jack_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jack_Profile.png; sourceTree = "<group>"; };
 		9504830A1AE9FF0A003AA85E /* Peter_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peter_Profile.png; sourceTree = "<group>"; };
@@ -186,6 +194,7 @@
 			children = (
 				9504831C1AEA19F3003AA85E /* Model */,
 				958A2F761AE8F40400DE2479 /* AppDelegate.swift */,
+				1BEA8D4D1AEB520900AA55D0 /* DealDetailViewController.swift */,
 				958A2F7B1AE8F40400DE2479 /* ViewController.swift */,
 				958A2F7D1AE8F40400DE2479 /* Main.storyboard */,
 				958A2F801AE8F40400DE2479 /* Images.xcassets */,
@@ -193,6 +202,9 @@
 				958A2F781AE8F40400DE2479 /* Deal.xcdatamodeld */,
 				958A2F741AE8F40400DE2479 /* Supporting Files */,
 				958A2FEF1AE8F5B000DE2479 /* SwiftHeader.h */,
+				1BEA8D4B1AEB51DF00AA55D0 /* SettingViewController.swift */,
+				1BEA8D4F1AEB524F00AA55D0 /* DealView.swift */,
+				1BEA8D511AEB565A00AA55D0 /* DealContainerViewController.swift */,
 			);
 			path = Deal;
 			sourceTree = "<group>";
@@ -281,6 +293,7 @@
 				TargetAttributes = {
 					958A2F701AE8F40400DE2479 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 5SL9V3WA7C;
 					};
 					958A2F881AE8F40400DE2479 = {
 						CreatedOnToolsVersion = 6.3;
@@ -343,11 +356,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9504831E1AEA1A08003AA85E /* User.swift in Sources */,
+				1BEA8D4E1AEB520900AA55D0 /* DealDetailViewController.swift in Sources */,
 				958A2F7C1AE8F40400DE2479 /* ViewController.swift in Sources */,
 				950483201AEA1A1E003AA85E /* Deal.swift in Sources */,
 				950483221AEA1CC8003AA85E /* AddrBookService.swift in Sources */,
 				958A2F771AE8F40400DE2479 /* AppDelegate.swift in Sources */,
+				1BEA8D521AEB565A00AA55D0 /* DealContainerViewController.swift in Sources */,
+				1BEA8D4C1AEB51DF00AA55D0 /* SettingViewController.swift in Sources */,
 				958A2F7A1AE8F40400DE2479 /* Deal.xcdatamodeld in Sources */,
+				1BEA8D501AEB524F00AA55D0 /* DealView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +493,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/frameworks",
@@ -483,7 +502,8 @@
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_iOS_v2/Deal/SwiftHeader.h;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/dokwon/Desktop/Deal_iOS_v2/Deal/SwiftHeader.h;
 			};
 			name = Debug;
 		};
@@ -491,6 +511,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/frameworks",
@@ -498,7 +520,8 @@
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_iOS_v2/Deal/SwiftHeader.h;
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/dokwon/Desktop/Deal_iOS_v2/Deal/SwiftHeader.h;
 			};
 			name = Release;
 		};
