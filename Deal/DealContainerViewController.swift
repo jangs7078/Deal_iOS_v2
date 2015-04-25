@@ -83,7 +83,7 @@ class DealContainerViewController: UIViewController {
     
         
         /* Initalize gestureRecongnizer for long touch of the add_deal button. */
-        var gesture: UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: " add_deal_voice_pressed")
+        var gesture: UILongPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: "add_deal_voice_pressed")
         gesture.minimumPressDuration = 1.0
         self.view.addGestureRecognizer(gesture)
     }
