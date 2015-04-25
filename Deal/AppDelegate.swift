@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        // Configure Parse server
         Parse.setApplicationId("AGKeeRaGQ7YaPzQ6rpNNcJj8dEzIkoBsOChpezZL", clientKey: "lhfSeh3wQ0Vepn4LvBOAlv5yItQQuk59O8WUm3vM")
         //PFCloud.callFunctionInBackground("inviteWithTwilio", withParameters: ["number" : "+16502857744"], block: nil)
         

@@ -16,9 +16,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        // Configure AWS Dynamo DB
-        //configureAWS()
-        
         // Configure my icon
         configureMyIcon()
         
