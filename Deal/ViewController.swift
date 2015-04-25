@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  Deal
 //
 //  Created by Ki Suk Jang on 4/23/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     
     @IBOutlet weak var my_icon: UIButton!

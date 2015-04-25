@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Deal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Deal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,6 +24,9 @@
                                 <state key="normal" image="icon-profile-default.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="zho-sr-WPj" kind="presentation" id="Gcd-bh-sYU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb4-Lx-Me5">
                                 <rect key="frame" x="16" y="612" width="35" height="35"/>
@@ -92,7 +95,7 @@
                                     <action selector="add_deal_text_pressed:" destination="zho-sr-WPj" eventType="touchUpInside" id="xZv-k3-zON"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SwE-4S-bFO">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SwE-4S-bFO">
                                 <rect key="frame" x="67" y="66" width="240" height="502"/>
                                 <color key="backgroundColor" red="1" green="0.40663816050267299" blue="0.37475338929989921" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
@@ -101,7 +104,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="add_deal_button" destination="tUY-ga-JjY" id="Waz-k6-U7k"/>
+                        <outlet property="add_deal_btn" destination="tUY-ga-JjY" id="0ac-YQ-sby"/>
+                        <outlet property="scrollView" destination="SwE-4S-bFO" id="ICU-1S-wNF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jGg-5E-kat" userLabel="First Responder" sceneMemberID="firstResponder"/>
