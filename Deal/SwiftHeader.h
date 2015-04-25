@@ -9,9 +9,6 @@
 #ifndef Deal_SwiftHeader_h
 #define Deal_SwiftHeader_h
 
-#import <AWSCore/AWSCore.h>
-#import <AWSDynamoDB/AWSDynamoDB.h>
-#import <AWSDynamoDB/AWSDynamoDBModel.h>
-#import <AWSCognito/AWSCognito.h>
+#import <Parse/Parse.h>
 
 #endif

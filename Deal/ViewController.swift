@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // Configure AWS Dynamo DB
-        configureAWS()
+        //configureAWS()
         
         // Configure my icon
         configureMyIcon()
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     }
     
     // Adds Credential pool and connect to DynamoDB
-    func configureAWS() {
+    /*func configureAWS() {
         let credentialsProvider = AWSCognitoCredentialsProvider(
             regionType: AWSRegionType.USEast1, identityPoolId: "us-east-1:554fda00-ce9b-43ec-a01b-d2ee16436ded")
         
@@ -91,7 +91,7 @@ class ViewController: UIViewController {
             return nil
         })
 
-    }
+    }*/
     
     override func shouldAutorotate() -> Bool {
         return false

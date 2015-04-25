@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     enum FilterType {
@@ -93,4 +93,4 @@ class Deal : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     override func isEqual(anObject: AnyObject?) -> Bool {
         return super.isEqual(anObject)
     }
-}
+}*/

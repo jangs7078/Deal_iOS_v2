@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+/*
 class User : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     
     var User_Id : String = ""
@@ -53,4 +53,4 @@ class User : AWSDynamoDBObjectModel, AWSDynamoDBModeling {
     override func isEqual(anObject: AnyObject?) -> Bool {
         return super.isEqual(anObject)
     }
-}
+}*/
