@@ -51,5 +51,7 @@ class AddrBookService {
             //var contactName: String = ABRecordCopyCompositeName(contactPerson).takeRetainedValue() as String
             //println ("contactName \(contactName)")
         }
+        
+        ParseDBService().addFriends(list_of_num)
     }
 }

@@ -15,12 +15,14 @@ class DataManager {
     //var deals : [NSManagedObject]
     var deals : [Deal]
     var deal_users : [String : User]
+    var my_id : String
     
     var cur_user : User?
     
     init () {
         self.deals = [Deal]()
         self.deal_users = Dictionary<String, User>()
+        self.my_id = "hv8I0APXIL"
     }
     
     
