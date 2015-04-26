@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     var deal_data_manager : DataManager!
+    
+    // Handle on api.ai instance
+    let apiai = ApiAI.sharedApiAI()
 
+    
+    /* Wrapper function that initilizes necessary requirements to use the
+     * API.ai speech recognition interace, most specifically authentication.
+     */
+    func configure_api_ai () {
+        /* Initialize audio session for API.ai*/
+        AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayAndRecord, error: nil)
+        AVAudioSession.sharedInstance().setActive(true, error: nil)
+        
+        let configuration = AIDefaultConfiguration()
+        
+        configuration.clientAccessToken = "4c7f3d7d451e4221b87b61a18bc55e07"
+        configuration.subscriptionKey = "da44c380-3fd3-45d3-9e61-53be30da7b3d"
+        
+        self.apiai.configuration = configuration
+    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -25,6 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         /* Datamanager instance that stores all global data for the deal app. */
         deal_data_manager = DataManager()
+        
+        /* Configure api_ai */
+        configure_api_ai()
         
         return true
     }

@@ -12,6 +12,9 @@
 		1BEA8D521AEB565A00AA55D0 /* DealContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8D511AEB565A00AA55D0 /* DealContainerViewController.swift */; };
 		1BEA8D541AEB59AA00AA55D0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8D531AEB59AA00AA55D0 /* DataManager.swift */; };
 		1BEA8D561AEB5B8600AA55D0 /* DealDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1BEA8D551AEB5B8600AA55D0 /* DealDetailView.xib */; };
+		1BEA8D581AEC238000AA55D0 /* DealCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8D571AEC238000AA55D0 /* DealCreateViewController.swift */; };
+		1BEA8D5A1AEC248D00AA55D0 /* DealConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEA8D591AEC248D00AA55D0 /* DealConstants.swift */; };
+		1BEA8D5D1AECBBB100AA55D0 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483281AEB1B6C003AA85E /* ParseUI.framework */; };
 		9504830C1AE9FF0A003AA85E /* Jenny_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483081AE9FF0A003AA85E /* Jenny_Profile.png */; };
 		9504830D1AE9FF0A003AA85E /* Jack_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 950483091AE9FF0A003AA85E /* Jack_Profile.png */; };
 		9504830E1AE9FF0A003AA85E /* Peter_Profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 9504830A1AE9FF0A003AA85E /* Peter_Profile.png */; };
@@ -29,7 +32,6 @@
 		9504832B1AEB1B6C003AA85E /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483251AEB1B6C003AA85E /* ParseCrashReporting.framework */; };
 		9504832C1AEB1B6C003AA85E /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483261AEB1B6C003AA85E /* ParseFacebookUtils.framework */; };
 		9504832D1AEB1B6C003AA85E /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483271AEB1B6C003AA85E /* ParseFacebookUtilsV4.framework */; };
-		9504832E1AEB1B6C003AA85E /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483281AEB1B6C003AA85E /* ParseUI.framework */; };
 		950483301AEB1B80003AA85E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9504832F1AEB1B80003AA85E /* AudioToolbox.framework */; };
 		950483321AEB1B88003AA85E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483311AEB1B88003AA85E /* CFNetwork.framework */; };
 		950483341AEB1B8F003AA85E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483331AEB1B8F003AA85E /* CoreGraphics.framework */; };
@@ -44,7 +46,7 @@
 		950483461AEB4D14003AA85E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483451AEB4D14003AA85E /* Bolts.framework */; };
 		958A2F771AE8F40400DE2479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F761AE8F40400DE2479 /* AppDelegate.swift */; };
 		958A2F7A1AE8F40400DE2479 /* Deal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F781AE8F40400DE2479 /* Deal.xcdatamodeld */; };
-		958A2F7C1AE8F40400DE2479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F7B1AE8F40400DE2479 /* ViewController.swift */; };
+		958A2F7C1AE8F40400DE2479 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F7B1AE8F40400DE2479 /* MainViewController.swift */; };
 		958A2F7F1AE8F40400DE2479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958A2F7D1AE8F40400DE2479 /* Main.storyboard */; };
 		958A2F811AE8F40400DE2479 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958A2F801AE8F40400DE2479 /* Images.xcassets */; };
 		958A2F841AE8F40400DE2479 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 958A2F821AE8F40400DE2479 /* LaunchScreen.xib */; };
@@ -67,6 +69,8 @@
 		1BEA8D511AEB565A00AA55D0 /* DealContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealContainerViewController.swift; sourceTree = "<group>"; };
 		1BEA8D531AEB59AA00AA55D0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		1BEA8D551AEB5B8600AA55D0 /* DealDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealDetailView.xib; sourceTree = "<group>"; };
+		1BEA8D571AEC238000AA55D0 /* DealCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCreateViewController.swift; sourceTree = "<group>"; };
+		1BEA8D591AEC248D00AA55D0 /* DealConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealConstants.swift; sourceTree = "<group>"; };
 		950483081AE9FF0A003AA85E /* Jenny_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jenny_Profile.png; sourceTree = "<group>"; };
 		950483091AE9FF0A003AA85E /* Jack_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jack_Profile.png; sourceTree = "<group>"; };
 		9504830A1AE9FF0A003AA85E /* Peter_Profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Peter_Profile.png; sourceTree = "<group>"; };
@@ -101,7 +105,7 @@
 		958A2F751AE8F40400DE2479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		958A2F761AE8F40400DE2479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		958A2F791AE8F40400DE2479 /* Deal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Deal.xcdatamodel; sourceTree = "<group>"; };
-		958A2F7B1AE8F40400DE2479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		958A2F7B1AE8F40400DE2479 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		958A2F7E1AE8F40400DE2479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		958A2F801AE8F40400DE2479 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		958A2F831AE8F40400DE2479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BEA8D5D1AECBBB100AA55D0 /* ParseUI.framework in Frameworks */,
 				950483461AEB4D14003AA85E /* Bolts.framework in Frameworks */,
 				950483441AEB1BD0003AA85E /* libsqlite3.dylib in Frameworks */,
 				950483421AEB1BC9003AA85E /* SystemConfiguration.framework in Frameworks */,
@@ -132,7 +137,6 @@
 				9504832B1AEB1B6C003AA85E /* ParseCrashReporting.framework in Frameworks */,
 				9504832C1AEB1B6C003AA85E /* ParseFacebookUtils.framework in Frameworks */,
 				9504832D1AEB1B6C003AA85E /* ParseFacebookUtilsV4.framework in Frameworks */,
-				9504832E1AEB1B6C003AA85E /* ParseUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +150,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		139768EFBB76EECA4860F1D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9504831C1AEA19F3003AA85E /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +191,7 @@
 				958A2F731AE8F40400DE2479 /* Deal */,
 				958A2F8C1AE8F40400DE2479 /* DealTests */,
 				958A2F721AE8F40400DE2479 /* Products */,
+				139768EFBB76EECA4860F1D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,7 +210,7 @@
 				9504831C1AEA19F3003AA85E /* Model */,
 				958A2F761AE8F40400DE2479 /* AppDelegate.swift */,
 				1BEA8D4D1AEB520900AA55D0 /* DealDetailViewController.swift */,
-				958A2F7B1AE8F40400DE2479 /* ViewController.swift */,
+				958A2F7B1AE8F40400DE2479 /* MainViewController.swift */,
 				1BEA8D551AEB5B8600AA55D0 /* DealDetailView.xib */,
 				958A2F7D1AE8F40400DE2479 /* Main.storyboard */,
 				958A2F801AE8F40400DE2479 /* Images.xcassets */,
@@ -208,6 +220,8 @@
 				958A2FEF1AE8F5B000DE2479 /* SwiftHeader.h */,
 				1BEA8D4B1AEB51DF00AA55D0 /* SettingViewController.swift */,
 				1BEA8D511AEB565A00AA55D0 /* DealContainerViewController.swift */,
+				1BEA8D571AEC238000AA55D0 /* DealCreateViewController.swift */,
+				1BEA8D591AEC248D00AA55D0 /* DealConstants.swift */,
 			);
 			path = Deal;
 			sourceTree = "<group>";
@@ -254,9 +268,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 958A2F931AE8F40400DE2479 /* Build configuration list for PBXNativeTarget "Deal" */;
 			buildPhases = (
+				C37778FD3EF74B52DBCC3EA4 /* Check Pods Manifest.lock */,
 				958A2F6D1AE8F40400DE2479 /* Sources */,
 				958A2F6E1AE8F40400DE2479 /* Frameworks */,
 				958A2F6F1AE8F40400DE2479 /* Resources */,
+				EF95F7C370FCA7D877DA6352 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,15 +370,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C37778FD3EF74B52DBCC3EA4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EF95F7C370FCA7D877DA6352 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		958A2F6D1AE8F40400DE2479 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9504831E1AEA1A08003AA85E /* User.swift in Sources */,
+				1BEA8D5A1AEC248D00AA55D0 /* DealConstants.swift in Sources */,
 				1BEA8D541AEB59AA00AA55D0 /* DataManager.swift in Sources */,
+				1BEA8D581AEC238000AA55D0 /* DealCreateViewController.swift in Sources */,
 				1BEA8D4E1AEB520900AA55D0 /* DealDetailViewController.swift in Sources */,
-				958A2F7C1AE8F40400DE2479 /* ViewController.swift in Sources */,
+				958A2F7C1AE8F40400DE2479 /* MainViewController.swift in Sources */,
 				950483201AEA1A1E003AA85E /* Deal.swift in Sources */,
 				950483221AEA1CC8003AA85E /* AddrBookService.swift in Sources */,
 				958A2F771AE8F40400DE2479 /* AppDelegate.swift in Sources */,
@@ -487,6 +538,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -505,9 +557,11 @@
 				);
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/dokwon/Desktop/Deal_iOS_v2/Deal/SwiftHeader.h;
+				VALID_ARCHS = "armv6 armv7 arm64 armv7s";
 			};
 			name = Debug;
 		};
@@ -523,9 +577,11 @@
 				);
 				INFOPLIST_FILE = Deal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/dokwon/Desktop/Deal_iOS_v2/Deal/SwiftHeader.h;
+				VALID_ARCHS = "armv6 armv7 arm64 armv7s";
 			};
 			name = Release;
 		};

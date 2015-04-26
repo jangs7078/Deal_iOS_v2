@@ -10,5 +10,7 @@
 #define Deal_SwiftHeader_h
 
 #import <Parse/Parse.h>
+#import <ApiAI/ApiAI.h>
+#import <ApiAI/AIDefaultConfiguration.h>
 
 #endif
