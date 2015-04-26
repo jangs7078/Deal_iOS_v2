@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         deal_data_manager = DataManager()
         
         
-        ParseDBService().getFriends()
+        //ParseDBService().getFriends()
         return true
     }
 
