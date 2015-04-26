@@ -42,6 +42,8 @@
 		950483421AEB1BC9003AA85E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483411AEB1BC9003AA85E /* SystemConfiguration.framework */; };
 		950483441AEB1BD0003AA85E /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483431AEB1BD0003AA85E /* libsqlite3.dylib */; };
 		950483461AEB4D14003AA85E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950483451AEB4D14003AA85E /* Bolts.framework */; };
+		950483481AEC3E31003AA85E /* ParseSMSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950483471AEC3E31003AA85E /* ParseSMSService.swift */; };
+		9504834A1AEC3FD3003AA85E /* ParseDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950483491AEC3FD3003AA85E /* ParseDBService.swift */; };
 		958A2F771AE8F40400DE2479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F761AE8F40400DE2479 /* AppDelegate.swift */; };
 		958A2F7A1AE8F40400DE2479 /* Deal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F781AE8F40400DE2479 /* Deal.xcdatamodeld */; };
 		958A2F7C1AE8F40400DE2479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958A2F7B1AE8F40400DE2479 /* ViewController.swift */; };
@@ -97,6 +99,8 @@
 		950483411AEB1BC9003AA85E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		950483431AEB1BD0003AA85E /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		950483451AEB4D14003AA85E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = frameworks/Bolts.framework; sourceTree = "<group>"; };
+		950483471AEC3E31003AA85E /* ParseSMSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseSMSService.swift; sourceTree = "<group>"; };
+		950483491AEC3FD3003AA85E /* ParseDBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseDBService.swift; sourceTree = "<group>"; };
 		958A2F711AE8F40400DE2479 /* Deal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958A2F751AE8F40400DE2479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		958A2F761AE8F40400DE2479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +157,8 @@
 				9504831F1AEA1A1E003AA85E /* Deal.swift */,
 				950483211AEA1CC8003AA85E /* AddrBookService.swift */,
 				1BEA8D531AEB59AA00AA55D0 /* DataManager.swift */,
+				950483471AEC3E31003AA85E /* ParseSMSService.swift */,
+				950483491AEC3FD3003AA85E /* ParseDBService.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -363,10 +369,12 @@
 				1BEA8D541AEB59AA00AA55D0 /* DataManager.swift in Sources */,
 				1BEA8D4E1AEB520900AA55D0 /* DealDetailViewController.swift in Sources */,
 				958A2F7C1AE8F40400DE2479 /* ViewController.swift in Sources */,
+				950483481AEC3E31003AA85E /* ParseSMSService.swift in Sources */,
 				950483201AEA1A1E003AA85E /* Deal.swift in Sources */,
 				950483221AEA1CC8003AA85E /* AddrBookService.swift in Sources */,
 				958A2F771AE8F40400DE2479 /* AppDelegate.swift in Sources */,
 				1BEA8D521AEB565A00AA55D0 /* DealContainerViewController.swift in Sources */,
+				9504834A1AEC3FD3003AA85E /* ParseDBService.swift in Sources */,
 				1BEA8D4C1AEB51DF00AA55D0 /* SettingViewController.swift in Sources */,
 				958A2F7A1AE8F40400DE2479 /* Deal.xcdatamodeld in Sources */,
 			);
@@ -507,7 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/dokwon/Desktop/Deal_iOS_v2/Deal/SwiftHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_iOS_v2/Deal/SwiftHeader.h;
 			};
 			name = Debug;
 		};
@@ -525,7 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/dokwon/Desktop/Deal_iOS_v2/Deal/SwiftHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_iOS_v2/Deal/SwiftHeader.h;
 			};
 			name = Release;
 		};

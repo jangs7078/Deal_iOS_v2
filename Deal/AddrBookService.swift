@@ -43,12 +43,16 @@ class AddrBookService {
         var errorRef: Unmanaged<CFError>?
         addressBook = extractABAddressBookRef(ABAddressBookCreateWithOptions(nil, &errorRef))
         var contactList: NSArray = ABAddressBookCopyArrayOfAllPeople(addressBook).takeRetainedValue()
-        println("records in the array \(contactList.count)")
-        
+        var list_of_num = [String]()
         for record:ABRecordRef in contactList {
             var contactPerson: ABRecordRef = record
-            var contactName: String = ABRecordCopyCompositeName(contactPerson).takeRetainedValue() as String
-            println ("contactName \(contactName)")
+            var contactRef: ABMultiValueRef = ABRecordCopyValue(contactPerson, AddressBook.kABPersonPhoneProperty).takeRetainedValue() as ABMultiValueRef
+            var contactNum: String = ABMultiValueCopyValueAtIndex(contactRef, 0).takeRetainedValue() as! String
+            println(contactNum)
+            list_of_num.append(contactNum)
+            //var contactName: String = ABRecordCopyCompositeName(contactPerson).takeRetainedValue() as String
         }
+        
+        ParseDBService().addFriends(list_of_num)
     }
 }

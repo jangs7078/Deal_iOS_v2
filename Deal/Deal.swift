@@ -11,9 +11,9 @@ import Foundation
 class Deal {
     
     enum FilterType {
-        case ME_FILTER_TYPE
-        case FAMILY_FILTER_TYPE
-        case FRIENDS_FILTER_TYPE
+        case PENDING
+        case IN_PROGRESS
+        case COMPLETE
     }
     
     var Deal_Id : String = ""
@@ -21,14 +21,12 @@ class Deal {
     var Dealee_Id : String = ""
     var Task  : String = ""
     var Reward   : String = ""
-    var Type   : FilterType = FilterType.ME_FILTER_TYPE
-    var Complete : Bool = false
+    var State   : FilterType = FilterType.IN_PROGRESS
     
-    init (task : String, reward :String, deal_type: FilterType, dealer_id : String, dealee_id : String) {
+    init (task : String, reward :String, state_type: FilterType, dealer_id : String, dealee_id : String) {
         self.Task = task
         self.Reward = reward
-        self.Complete = false
-        self.Type = deal_type
+        self.State = state_type
         
         self.Dealer_Id = dealer_id
         self.Dealee_Id = dealee_id
@@ -50,24 +48,24 @@ class Deal {
     
     class func type_to_int (type : FilterType) ->Int{
         switch (type) {
-        case FilterType.ME_FILTER_TYPE :
+        case FilterType.PENDING :
             return 0
-        case FilterType.FAMILY_FILTER_TYPE :
+        case FilterType.IN_PROGRESS :
             return 1
-        case FilterType.FRIENDS_FILTER_TYPE :
+        case FilterType.COMPLETE :
             return 2
         }
     }
     class func int_to_type (stored_type : Int) ->FilterType{
         switch (stored_type) {
         case 0:
-            return FilterType.ME_FILTER_TYPE
+            return FilterType.PENDING
         case 1 :
-            return FilterType.FAMILY_FILTER_TYPE
+            return FilterType.IN_PROGRESS
         case 2:
-            return FilterType.FRIENDS_FILTER_TYPE
+            return FilterType.COMPLETE
         default :
-            return  FilterType.ME_FILTER_TYPE
+            return  FilterType.PENDING
         }
     }
 }

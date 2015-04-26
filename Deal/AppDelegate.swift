@@ -21,11 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Configure Parse server
         Parse.setApplicationId("AGKeeRaGQ7YaPzQ6rpNNcJj8dEzIkoBsOChpezZL", clientKey: "lhfSeh3wQ0Vepn4LvBOAlv5yItQQuk59O8WUm3vM")
-        //PFCloud.callFunctionInBackground("inviteWithTwilio", withParameters: ["number" : "+16502857744"], block: nil)
+        
+        
         
         /* Datamanager instance that stores all global data for the deal app. */
         deal_data_manager = DataManager()
         
+        
+        ParseDBService().getFriends()
         return true
     }
 
