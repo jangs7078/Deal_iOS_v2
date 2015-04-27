@@ -17,22 +17,68 @@ class DealContainerViewController: UIViewController {
     
     @IBOutlet weak var add_deal_btn: UIButton!
     
+    var dimmed_view : UIView?
+    
+    
+    /* Dims the screen when speech recognition is activated
+     */
+    func dim_screen () {
+        dimmed_view = UIView()
+        dimmed_view!.bounds = UIScreen.mainScreen().bounds
+        dimmed_view!.backgroundColor = UIColor.blackColor()
+        dimmed_view!.alpha = 0.6
+        self.view.addSubview(dimmed_view!)
+    }
+    
+    /* Undims the screen when speech recognition finishes
+     */
+    func undim_screen (){
+        dimmed_view!.removeFromSuperview()
+    }
+    
+    func alert_user_create_deal_result (success : Bool) {
+        var alert_title = "Command not understood"
+        var alert_body = "Sorry, you're going to have to make the deal via text!"
+        if (success) {
+            alert_title = "Deal Created!"
+            alert_body = "Deal created successfully."
+        }
+        var alert = UIAlertController(title: alert_title, message: alert_body, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    
     /* Function to add deals via voice UI.*/
     func add_deal_voice_pressed (longPress: UIGestureRecognizer) {
         if (longPress.state == UIGestureRecognizerState.Ended) {
             /* TODO: add voice interface here */
-             let app_delegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let app_delegate = UIApplication.sharedApplication().delegate as! AppDelegate
             // Request using voice
             let apiai = app_delegate.apiai
             
             let request = apiai.requestWithType(AIRequestType.Voice) as! AIVoiceRequest
             
             request.setCompletionBlockSuccess({[unowned self] (AIRequest request, AnyObject response) -> Void in
+                self.undim_screen()
                 // Handle success ...
                 println ("succeeded!!")
+                println (response?.description)
+                self.alert_user_create_deal_result (true)
+                
+                // Move back to deal result page
+                self.dismissViewControllerAnimated(true, completion: nil)
                 
                 }, failure: { (AIRequest request, NSError error) -> Void in
+                     self.undim_screen()
                     // Handle error ...
+                    // Move to create deal via text, alert user of failure. 
+                    println ("Request :" + request.description)
+                    println (error)
+                    
+                    self.alert_user_create_deal_result (false)
+                    self.performSegueWithIdentifier(make_deal_segue_identifier, sender: nil)
+                    
             })
             
             apiai.enqueue(request)
@@ -40,6 +86,7 @@ class DealContainerViewController: UIViewController {
         } else if (longPress.state == UIGestureRecognizerState.Began) {
             // For debug purposes.
             println("Began")
+            dim_screen()
         }
     }
     

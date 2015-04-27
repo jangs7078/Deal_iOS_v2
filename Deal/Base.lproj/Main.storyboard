@@ -97,7 +97,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qMR-ve-FXC" kind="presentation" id="edI-Oy-G0T"/>
+                                    <segue destination="qMR-ve-FXC" kind="presentation" identifier="make_deal_segue_identifier" id="edI-Oy-G0T"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwE-4S-bFO">

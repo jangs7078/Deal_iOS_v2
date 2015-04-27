@@ -7,21 +7,21 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>792B1A8B-E3C8-4C20-B358-4B7A5CADACCF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Deal</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E8C92EB4518157F98DE10C507EA811925FA98081</key>
-		<string>https://github.com/jangs7078/Deal_iOS_v2.git</string>
+		<string>https://github.com/jangs7078/Deal_iOS_v2</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Deal.xcodeproj</string>
+	<string>Deal.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E8C92EB4518157F98DE10C507EA811925FA98081</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/jangs7078/Deal_iOS_v2.git</string>
+	<string>https://github.com/jangs7078/Deal_iOS_v2</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>E8C92EB4518157F98DE10C507EA811925FA98081</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Deal</string>
+			<string>Deal_ios_v2</string>
 		</dict>
 	</array>
 </dict>

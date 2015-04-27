@@ -17,7 +17,7 @@ class DealCreateViewController: UIViewController,  UITableViewDelegate, UITableV
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
         //fatalError("init(coder:) has not been implemented")
-        self.new_deal = Deal(task : "", reward :"", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : "", dealee_id : "")
+        self.new_deal = Deal(task : "", reward :"", state_type: Deal.FilterType.PENDING, dealer_id : "", dealee_id : "")
         
         filtered_users = appDelegate.deal_data_manager!.deal_users.values.array
         super.init(coder: aDecoder)

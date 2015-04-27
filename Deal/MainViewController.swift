@@ -101,12 +101,12 @@ class MainViewController: UIViewController {
         
         let all_users = [User (id: user_1, first_name: "Aime", last_name: "Lindsay", photo: aime_nsdata), User (id: user_2, first_name: "Jenny", last_name: "Lindsay", photo: jenny_nsdata), User (id: user_3, first_name: "Jack", last_name: "Lindsay", photo: jack_nsdata)]
         
-        let all_deals = [Deal(task: "Clean the house", reward: "Get Candy", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_2),
-            Deal(task: "Kiss your mom", reward: "Get money", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_3),
-            Deal(task: "Pick up grandma", reward: "Get licorice", deal_type: Deal.FilterType.FRIENDS_FILTER_TYPE, dealer_id : user_2, dealee_id : user_3),
-            Deal(task: "Do homework", reward: "Get Xbox", deal_type: Deal.FilterType.ME_FILTER_TYPE, dealer_id : user_1, dealee_id : user_3),
-            Deal(task: "Practice Piano", reward: "Get stoned", deal_type: Deal.FilterType.FAMILY_FILTER_TYPE, dealer_id : user_3, dealee_id : user_2),
-            Deal(task: "Practice guitar", reward: "Get game gold", deal_type: Deal.FilterType.FRIENDS_FILTER_TYPE, dealer_id : user_2, dealee_id : user_3)
+        let all_deals = [Deal(task: "Clean the house", reward: "Get Candy", state_type: Deal.FilterType.PENDING, dealer_id : user_1, dealee_id : user_2),
+            Deal(task: "Kiss your mom", reward: "Get money", state_type: Deal.FilterType.PENDING, dealer_id : user_1, dealee_id : user_3),
+            Deal(task: "Pick up grandma", reward: "Get licorice", state_type: Deal.FilterType.PENDING, dealer_id : user_2, dealee_id : user_3),
+            Deal(task: "Do homework", reward: "Get Xbox", state_type: Deal.FilterType.PENDING, dealer_id : user_1, dealee_id : user_3),
+            Deal(task: "Practice Piano", reward: "Get stoned", state_type: Deal.FilterType.PENDING, dealer_id : user_3, dealee_id : user_2),
+            Deal(task: "Practice guitar", reward: "Get game gold", state_type: Deal.FilterType.PENDING, dealer_id : user_2, dealee_id : user_3)
         ]
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         for deal in all_deals {
