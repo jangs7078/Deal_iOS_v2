@@ -49,9 +49,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /* Configure api_ai */
         configure_api_ai()
         
-        
-        ParseDBService().getDeals("hv8I0APXIL")
-        
+        //ParseTextService().getVerificationCode("6502857744")
+        ParseTextService().verifyCode("6502857744", code: "2055")
         return true
     }
 
