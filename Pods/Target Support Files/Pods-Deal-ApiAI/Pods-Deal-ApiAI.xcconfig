@@ -1,0 +1,1 @@
+PODS_DEAL_APIAI_OTHER_LDFLAGS = -framework "UIKit"
