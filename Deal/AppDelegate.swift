@@ -43,13 +43,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Configure Parse server
         Parse.setApplicationId("AGKeeRaGQ7YaPzQ6rpNNcJj8dEzIkoBsOChpezZL", clientKey: "lhfSeh3wQ0Vepn4LvBOAlv5yItQQuk59O8WUm3vM")
         
-        
-        
         /* Datamanager instance that stores all global data for the deal app. */
         deal_data_manager = DataManager()
         
         /* Configure api_ai */
         configure_api_ai()
+        
+        
+        ParseDBService().getDeals("hv8I0APXIL")
         
         return true
     }

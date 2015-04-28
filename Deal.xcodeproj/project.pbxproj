@@ -590,7 +590,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/dokwon/Desktop/Deal_iOS_v2/Deal/SwiftHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_iOS_v2/Deal/SwiftHeader.h;
 			};
 			name = Debug;
 		};
@@ -641,7 +641,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/dokwon/Desktop/Deal_iOS_v2/Deal/SwiftHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/kisukjang/Desktop/School/College/CS/ME216C/Deal_iOS_v2/Deal/SwiftHeader.h;
 			};
 			name = Release;
 		};

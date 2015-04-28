@@ -10,6 +10,40 @@ import Foundation
 
 class ParseDBService {
     
+    enum DealUpdateType {
+        case ACCEPT
+        case REJECT
+        case COMPLETE
+        case CONFIRM
+    }
+    
+    func type_to_int (type : DealUpdateType) ->Int{
+        switch (type) {
+        case DealUpdateType.ACCEPT :
+            return 1
+        case DealUpdateType.REJECT :
+            return 2
+        case DealUpdateType.COMPLETE :
+            return 3
+        case DealUpdateType.CONFIRM :
+            return 4
+        }
+    }
+    func int_to_type (stored_type : Int) ->DealUpdateType{
+        switch (stored_type) {
+        case 1:
+            return DealUpdateType.ACCEPT
+        case 2 :
+            return DealUpdateType.REJECT
+        case 3:
+            return DealUpdateType.COMPLETE
+        case 4:
+            return DealUpdateType.CONFIRM
+        default :
+            return  DealUpdateType.ACCEPT
+        }
+    }
+    
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 
     func createUser(phone_num : String, first_name : String, last_name : String) {
@@ -94,6 +128,50 @@ class ParseDBService {
         params.setObject(task, forKey: "Task" )
         params.setObject(reward, forKey: "Reward" )
         PFCloud.callFunctionInBackground("createDeal", withParameters: params as [NSObject : AnyObject], block: {
+            (result: AnyObject?, error: NSError?) -> Void in
+            if ( error == nil) {
+                NSLog("success: \(result) ")
+            }
+            else if (error != nil) {
+                NSLog("error: \(error!.userInfo)")
+            }
+        })
+    }
+    
+    func deleteDeal(deal_id: String){
+        let params = NSMutableDictionary()
+        params.setObject(deal_id, forKey: "objectId" )
+        PFCloud.callFunctionInBackground("deleteDeal", withParameters: params as [NSObject : AnyObject], block: {
+            (result: AnyObject?, error: NSError?) -> Void in
+            if ( error == nil) {
+                NSLog("success: \(result) ")
+            }
+            else if (error != nil) {
+                NSLog("error: \(error!.userInfo)")
+            }
+        })
+    }
+    
+    func updateDeal(deal_id: String, state: DealUpdateType){
+        let params = NSMutableDictionary()
+        params.setObject(deal_id, forKey: "objectId" )
+        params.setObject(type_to_int(state), forKey: "State" )
+        println(state)
+        PFCloud.callFunctionInBackground("updateDeal", withParameters: params as [NSObject : AnyObject], block: {
+            (result: AnyObject?, error: NSError?) -> Void in
+            if ( error == nil) {
+                NSLog("success: \(result) ")
+            }
+            else if (error != nil) {
+                NSLog("error: \(error!.userInfo)")
+            }
+        })
+    }
+    
+    func getDeals(id: String){
+        let params = NSMutableDictionary()
+        params.setObject(id, forKey: "objectId" )
+        PFCloud.callFunctionInBackground("getDeals", withParameters: params as [NSObject : AnyObject], block: {
             (result: AnyObject?, error: NSError?) -> Void in
             if ( error == nil) {
                 NSLog("success: \(result) ")

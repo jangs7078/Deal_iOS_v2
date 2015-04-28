@@ -1134,6 +1134,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 597CB0FF735D5F413C06C81F /* Pods-Deal-Bolts-Private.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Deal-Bolts/Pods-Deal-Bolts-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -1150,6 +1154,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 877F93CD02A506E11D2CD2CD /* Pods-Deal-CWLSynthesizeSingleton-Private.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Deal-CWLSynthesizeSingleton/Pods-Deal-CWLSynthesizeSingleton-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -1166,6 +1174,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5CF5C174C6037357F2720BA /* Pods-Deal-AFNetworking-Private.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Deal-AFNetworking/Pods-Deal-AFNetworking-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -1182,6 +1194,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5CF5C174C6037357F2720BA /* Pods-Deal-AFNetworking-Private.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Deal-AFNetworking/Pods-Deal-AFNetworking-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -1198,6 +1214,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 877F93CD02A506E11D2CD2CD /* Pods-Deal-CWLSynthesizeSingleton-Private.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Deal-CWLSynthesizeSingleton/Pods-Deal-CWLSynthesizeSingleton-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -1214,6 +1234,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A6FCA9B8DE683460D010A66 /* Pods-Deal-ApiAI-Private.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Deal-ApiAI/Pods-Deal-ApiAI-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -1230,6 +1254,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE4B38EF89039B582E36287E /* Pods-Deal.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1280,6 +1308,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8F54FEB3C57BE76AEC6D734 /* Pods-Deal.release.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv7s,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -1335,6 +1367,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 597CB0FF735D5F413C06C81F /* Pods-Deal-Bolts-Private.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Deal-Bolts/Pods-Deal-Bolts-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
@@ -1351,6 +1387,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3A6FCA9B8DE683460D010A66 /* Pods-Deal-ApiAI-Private.xcconfig */;
 			buildSettings = {
+				ARCHS = (
+					armv7s,
+					armv7,
+				);
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-Deal-ApiAI/Pods-Deal-ApiAI-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
